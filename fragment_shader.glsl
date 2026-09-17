@@ -36,5 +36,5 @@ void main(){
         atlas_uv.y = (float(tile_y) + local_uv.y) / float(atlas_row);
         
 	float glyph = (texture(atlas_tex, atlas_uv).r);
-	f_colour = vec4(vec3(glyph),1.0);
+	f_colour = vec4(temp_colour*glyph,1.0);
 }

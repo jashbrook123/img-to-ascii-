@@ -24,7 +24,7 @@ file_name = input("What is the name of the file (ohne extension - must be png):\
 screen= pygame.display.set_mode(wh, pygame.OPENGL | pygame.DOUBLEBUF)
 display = pygame.Surface(wh)
 
-img = pygame.image.load(f"{file_name}.png").convert_alpha()
+img = pygame.image.load(f"{file_name}.jpeg").convert_alpha()
 img = pygame.transform.scale(img,wh)
 
 ctx = moderngl.create_context()
